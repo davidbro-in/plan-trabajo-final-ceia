@@ -374,25 +374,56 @@ Revisar que la fecha de finalización coincida con lo indicado en el Acta Consti
 
 En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realizado con el paquete de \textit{pgfgantt}. En la plantilla pueden ver el código que lo genera y usarlo de base para construir el propio.
 
-\begin{figure}[htbp]
-\begin{center}
-\begin{ganttchart}{1}{12}
-  \gantttitle{2020}{12} \\
-  \gantttitlelist{1,...,12}{1} \\
-  \ganttgroup{Group 1}{1}{7} \\
-  \ganttbar{Task 1}{1}{2} \\
-  \ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-  \ganttmilestone{Milestone o hito}{7} \ganttnewline
-  \ganttbar{Final Task}{8}{12}
-  \ganttlink{elem2}{elem3}
-  \ganttlink{elem3}{elem4}
-\end{ganttchart}
-\end{center}
-\caption{Diagrama de gantt de ejemplo}
-\label{fig:gantt}
-\end{figure}
-
 \end{consigna}
+
+\begin{figure}[htbp]
+  \begin{center}
+    \begin{ganttchart}[
+      y unit title=0.4cm,
+      y unit chart=0.5cm,
+      vgrid,
+      time slot format=isodate-yearmonth,
+      time slot unit=month, 
+      title/.append style={draw=none, fill=barblue},
+      title label font=\sffamily\bfseries\color{white},
+      title label node/.append style={below=-1.6ex},
+      title left shift=.05,
+      title right shift=-.05,
+      title height=1,
+      bar/.append style={draw=none, fill=groupblue},
+      bar height=.6,
+      bar label font=\normalsize\color{black!50},
+      group right shift=0,
+      group top shift=.6,
+      group height=.3,
+      group peaks height=.2,
+      bar incomplete/.append style={fill=green}
+     ]{2010-09}{2011-12}
+     \gantttitlecalendar{year}\\
+     \ganttbar[
+      progress=100,
+      bar progress label font=\small\color{barblue},
+      bar progress label node/.append style={right=4pt},
+      bar label font=\normalsize\color{barblue},
+      name=pp
+     ]{Preliminary Project}{2010-09}{2010-12} \\
+    \ganttset{progress label text={}, link/.style={black, -to}}
+    \ganttgroup{Objective 1}{2011-01}{2011-12} \\
+    \ganttbar[progress=4, name=T1A]{Task A}{2011-01}{2011-06} \\
+    \ganttlinkedbar[progress=0]{Task B}{2011-07}{2011-12} \\
+    \ganttgroup{Objective 2}{2011-01}{2011-12} \\
+    \ganttbar[progress=15, name=T2A]{Task A}{2011-01}{2011-09} \\
+    \ganttlinkedbar[progress=0]{Task B}{2011-10}{2011-12} \\
+    \ganttgroup{Objective 3}{2011-05}{2011-08} \\
+      \ganttbar[progress=0]{Task A}{2011-05}{2011-08}
+      \ganttset{link/.style={green}}
+      \ganttlink[link mid=.4]{pp}{T1A}
+      \ganttlink[link mid=.159]{pp}{T2A}
+    \end{ganttchart}
+  \end{center}
+  \caption{Diagrama de gantt de ejemplo}
+  \label{fig:gantt}
+\end{figure}
 
 \section{9. Matriz de uso de recursos de materiales}
 \label{sec:recursos}

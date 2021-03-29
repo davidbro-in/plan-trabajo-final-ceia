@@ -88,9 +88,16 @@
 \usepackage{tabularx}
 \usepackage{pgfgantt} 
 \usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
 \usepackage[section]{placeins} % evita que los floats se pueden ubicar más allá de un \section{•}
 \usepackage[labelsep=period]{caption}
 \usepackage{longtable}
+
+% Define colors used on Gantt Char
+\definecolor{barblue}{RGB}{153,204,254}
+\definecolor{groupblue}{RGB}{51,102,254}
+\definecolor{linkred}{RGB}{165,0,33} 
 
 %\usepackage{tikz}
 %\usetikzlibrary{arrows, arrows.meta, calc, positioning, quotes, shapes}
