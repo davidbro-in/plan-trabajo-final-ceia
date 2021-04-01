@@ -1,30 +1,33 @@
 \documentclass[11pt]{charter}
 
 % El títulos de la memoria, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \ttitle
-\titulo{Asistencia a clientes, dentro de tiendas, mejorada con inteligencia artificial} 
+\titulo{Segmentación de clientes basada en aprendizaje automático} 
 
 % Nombre del posgrado, se usa en la carátula y se puede usar el cualquier lugar del documento con el comando \degreename
 %\posgrado{Carrera de Especialización en Sistemas Embebidos} 
 %\posgrado{Carrera de Especialización en Internet de las Cosas} 
-\posgrado{Carrera de especialización en Intelegencia Artificial}
+\posgrado{Carrera de especialización en intelegencia artificial}
 %\posgrado{Maestría en Sistemas Embebidos} 
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
 \autor{David Mauricio Broin} 
 
-% El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y \pertesupname y \pertecosupname
+% El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y 
+%\pertesupname y \pertecosupname
 \director{Ing. Yoel Yamil López}
 \pertenenciaDirector{FIUBA} 
 % FIXME:NO IMPLEMENTADO EL CODIRECTOR ni su pertenencia
 \codirector{} % si queda vacio no se deberíá incluir 
 \pertenenciaCoDirector{}
 
-% Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y \empclientename
+% Nombre del cliente, quien va a aprobar los resultados del proyecto, se puede usar con el comando \clientename y 
+%\empclientename
 \cliente{Gabriel Lourenco}
-\empresaCliente{DevOdds SA de CV}
+\empresaCliente{PLAYTRAK Sistemas de Monitoreo SA de CV}
 
-% Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
+% Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, 
+%\jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
 \juradoUno{Nombre y Apellido (1)}
 \pertenenciaJurUno{pertenencia (1)} 
 \juradoDos{Nombre y Apellido (2)}
@@ -62,7 +65,7 @@
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
-1.0      & Creación del documento                                          & 27/06/2020 \\ \hline
+1.0      & Creación del documento                                          & 01/04/2021 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -79,22 +82,28 @@ Mendoza, \fechaInicioName
 
 \vspace{2cm}
 
-Por medio de la presente se acuerda con \authorname\hspace{1px} que su Trabajo Final de la \degreename\hspace{1px} 
-se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de control de temperatura de un calefón, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y \textcolor{red}{\$XXX}, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública \fechaFinalName.
+Por medio de la presente se acuerda con \authorname\hspace{1px} que su trabajo final de la \degreename\hspace{1px} 
+se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de segmentación de 
+clientes utilizando aprendizaje automático, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y 
+USD1300, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública 
+\fechaFinalName.
 
-Se adjunta a esta acta la planificación inicial.
+Se adjunta a esta acta el plan inicial.
 
 \vfill
 
 % Esta parte se construye sola con la información que hayan cargado en el preámbulo del documento y no debe modificarla
 \begin{table}[ht]
-\centering
-\begin{tabular}{ccc}
-\begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} \vspace{2.5cm} \\ 
-\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
-%\begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & \begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
-%\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
-\end{tabular}
+  \centering
+  \begin{tabular}{ccc}
+    \begin{tabular}[c]{@{}c@{}}Ariel Lutenberg \\ Director posgrado FIUBA\end{tabular} & 
+    \hspace{2cm} & \begin{tabular}[c]{@{}c@{}}\clientename \\ \empclientename \end{tabular} 
+    \vspace{2.5cm} \\ 
+    \multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \supname \\ Director del Trabajo Final\end{tabular}} \vspace{2.5cm} \\
+    %\begin{tabular}[c]{@{}c@{}}\jurunoname \\ Jurado del Trabajo Final\end{tabular}     &  & 
+    %\begin{tabular}[c]{@{}c@{}}\jurdosname\\ Jurado del Trabajo Final\end{tabular}  \vspace{2.5cm}  \\
+    %\multicolumn{3}{c}{\begin{tabular}[c]{@{}c@{}} \jurtresname\\ Jurado del Trabajo Final\end{tabular}} \vspace{.5cm}                                                                     
+  \end{tabular}
 \end{table}
 
 
@@ -103,36 +112,42 @@ Se adjunta a esta acta la planificación inicial.
 \section{Descripción técnica-conceptual del proyecto a realizar}
 \label{sec:descripcion}
 
-\begin{consigna}{red}
-El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, su motivación y su importancia.
-Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
+El objetivo es que el lector en una o dos páginas entienda de qué se trata el proyecto y cuáles son sus desafíos, 
+su motivación y su importancia.
+Se debe destacar claramente cuál es el valor que agrega el proyecto a realizar. ``El presente proyecto se destaca 
+especialmente por incorporar tal cosa... Esto lo diferencia de otros sistemas similares en que ...''
 
 Puede ser útil incluir en esta sección la respuesta a alguna de estas preguntas:
 
 \begin{itemize}
-\item ¿Cómo se vincula este proyecto con la misión de la organización?
-\item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
-\item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
-\item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
-\item ¿Cuales son las necesidades que debe satisfacer?
-\item ¿Por dónde pasa la innovación?
+  \item ¿Cómo se vincula este proyecto con la misión de la organización?
+  \item ¿Cómo se inserta este proyecto en el modelo de negocio de la organización?
+  \item ¿Ayuda a la explicación si se incluye un lienzo Canvas del Modelo de Negocio?
+  \item ¿En qué estado del ciclo de vida está el producto que se desea reemplazar o mejorar?
+  \item ¿Cuales son las necesidades que debe satisfacer?
+  \item ¿Por dónde pasa la innovación?
 \end{itemize}
 
-La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema }y una frase como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa que...''. Luego recién más abajo de haber puesto esta frase se pone la figura. La regla es que las figuras nunca pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una figura.
+La descripción técnica-conceptual \textbf{debe incluir al menos un diagrama en bloques del sistema }y una frase 
+como la siguiente: ``En la Figura \ref{fig:diagBloques} se presenta el diagrama en bloques del sistema. Se observa
+que...''. Luego recién más abajo de haber puesto esta frase se pone la figura. La regla es que las figuras nunca 
+pueden ir antes de ser mencionadas en el texto, porque sino el lector no entiende por qué de pronto aparece una 
+figura.
 
 \vspace{25px}
 
 \begin{figure}[htpb]
-\centering 
-\includegraphics[width=.7\textwidth]{./Figuras/diagBloques.png}
-\caption{Diagrama en bloques del sistema}
-\label{fig:diagBloques}
+  \centering 
+  \includegraphics[width=.7\textwidth]{./Figuras/diagBloques.png}
+  \caption{Diagrama en bloques del sistema}
+  \label{fig:diagBloques}
 \end{figure}
 
 \vspace{25px}
 
-El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a comprender mejor el diagrama.
-\end{consigna}
+El tamaño de la tipografía en la figura debe ser adecuado para que NO pase lo que ocurre acá, donde el lector debe 
+esforzarse para poder leer el texto. Los colores usados en el diagrama deben ser adecuados, tal que ayuden a 
+comprender mejor el diagrama.
 
 
 \section{Identificación y análisis de los interesados}
