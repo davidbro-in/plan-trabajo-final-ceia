@@ -11,7 +11,7 @@
 %\posgrado{Maestría en Internet de las cosas}
 
 % Tu nombre, se puede usar el cualquier lugar del documento con el comando \authorname
-\autor{David Mauricio Broin} 
+\autor{Tec. David Mauricio Broin} 
 
 % El nombre del director y co-director, se puede usar el cualquier lugar del documento con el comando \supname y \cosupname y 
 %\pertesupname y \pertecosupname
@@ -66,6 +66,7 @@
 \rowcolor[HTML]{C0C0C0} 
 Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios realizados} & Fecha      \\ \hline
 1.0      & Creación del documento                                          & 01/04/2021 \\ \hline
+1.1      & Agregar descripción                                          & 05/04/2021 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -83,10 +84,10 @@ Mendoza, \fechaInicioName
 \vspace{2cm}
 
 Por medio de la presente se acuerda con \authorname\hspace{1px} que su trabajo final de la \degreename\hspace{1px} 
-se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema de segmentación de 
-clientes utilizando aprendizaje automático, y tendrá un presupuesto preliminar estimado de 600 hs de trabajo y 
-USD1300, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación pública 
-\fechaFinalName.
+se titulará ``\ttitle'', consistirá esencialmente en el prototipo preliminar de un sistema que analice el historial de 
+transacciones y devuelva la categoría para un cliente dado, utilizando aprendizaje automático, y tendrá un presupuesto 
+preliminar estimado de 600 hs de trabajo y USD1300, con fecha de inicio \fechaInicioName\hspace{1px} y fecha de presentación 
+pública \fechaFinalName.
 
 Se adjunta a esta acta el plan inicial.
 
@@ -156,21 +157,15 @@ sea trivial identificar a aquellos visitantes que mayor valor poseen para el neg
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
-Auspiciante   &   -               &          -   	&   -    	\\ \hline
 Cliente       & \clientename      &\empclientename	&  Director de la empresa      	\\ \hline
-Impulsor      &      -            &   -          	&    -   	\\ \hline
 Responsable   & \authorname       & FIUBA        	& Alumno 	\\ \hline
-Colaboradores &    -              &   -          	&    -   	\\ \hline
 Orientador    & \supname	      & \pertesupname 	& Director	trabajo final \\ \hline
-Equipo        &    -              &     -        	&    -   	\\ \hline
-Opositores    &    -              &     -        	&    -   	\\ \hline
-Usuario final &    -              &     -        	&    -   	\\ \hline
 \end{tabularx}
 \end{table}
 
 \begin{itemize}
-\item Cliente: Sólo marca lineamientos generales y resultados a obtener, no brinda ningún tipo de detalle sobre la implementación.
-\item Director: Se involucra desde el principio del proyecto y es también orientador.
+\item liente: sólo marca lineamientos generales y resultados a obtener, no brinda ningún tipo de detalle sobre la implementación.
+\item Director: se involucra desde el principio del proyecto y es también orientador.
 \end{itemize}
 
 
@@ -193,11 +188,7 @@ El presente proyecto no incluye ningún tipo de trabajo sobre el actual sistema 
 \section{3. Supuestos del proyecto}
 \label{sec:supuestos}
 
-Para el desarrollo del presente proyecto se supone que:
-
-\begin{itemize}
-\item El cliente permitirá el desarrollo dentro de la jornada laboral.
-\end{itemize}
+Para el desarrollo del presente proyecto se supone que el cliente permitirá el desarrollo dentro de la jornada laboral.
 
 \section{4. Requerimientos}
 \label{sec:requerimientos}
@@ -211,7 +202,15 @@ Para el desarrollo del presente proyecto se supone que:
 	\begin{enumerate}
 	\item El código fuente debe estar alojado en GitLab.
 	\item Se debe implementar DevOps y el proyecto debe estar siempre disponible para revisión.
+	\item El desarrollo se debe realizar usando \textit{Test Driven Development}.
 	\end{enumerate}
+\item Grupo de requerimientos asociados con documentación
+  \begin{enumerate}
+    \item La documentación debe estar escrita en \textit{markdown} y alojada usando MkDocs o similar.
+    \item Debe contar con el detalle para operaciones (instalación del \textit{software}).
+    \item Debe contar con el detalle de uso (información para usuarios).
+    \item Debe contar con el detalle para extender las funcionalidades (información para otros programadores).
+  \end{enumerate}
 \end{enumerate}
 
 \section{Historias de usuarios (\textit{Product backlog})}
@@ -227,7 +226,7 @@ Descripción: En esta sección se deben incluir las historias de usuarios y su p
 \begin{itemize}
 \item Repositorio/s en GitLab.
 \item \textit{Software} funcionando en la nube.
-\item Docuemntación.
+\item Docuementación publicada como sitio web.
 \end{itemize}
 
 \section{6. Desglose del trabajo en tareas}
