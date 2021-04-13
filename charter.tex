@@ -68,6 +68,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 1.0      & Creación del documento                                          & 01/04/2021 \\ \hline
 1.1      & Agregar descripción                                          & 05/04/2021 \\ \hline
 1.2      & Completa puntos que no dependen de WBS                       & 12/04/2021 \\ \hline
+1.3      & Completa WBS y diagrama de Gantt                             & 13/04/2021 \\ \hline
 \end{tabularx}
 \end{table}
 
@@ -266,37 +267,43 @@ este atributo.
 \section{6. Desglose del trabajo en tareas}
 \label{sec:wbs}
 
-\begin{consigna}{red}
-Se recomienda mostrar el WBS mediante una lista indexada:
-
 \begin{enumerate}
-\item Grupo de tareas 1
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\end{enumerate}
-\item Grupo de tareas 2
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\end{enumerate}
-	\item Grupo de tareas 3
-	\begin{enumerate}
-	\item Tarea 1 (tantas hs)
-	\item Tarea 2 (tantas hs)
-	\item Tarea 3 (tantas hs)
-	\item Tarea 4 (tantas hs)
-	\item Tarea 5 (tantas hs)
-	\end{enumerate}
+  \item Organización. (total 90 hs)
+    \begin{enumerate}
+    \item Planificación del proyecto. (90 hs)
+    \end{enumerate}
+  \item Ejecución. (total 390 hs)
+    \begin{enumerate}
+    \item Análisis del problema. 
+    \begin{itemize}
+      \item Identificación del problema de negocio. (30 hs)
+      \item Obtener la información relevante. (30 hs)
+      \item Transformar el problema de negocio en una hipótesis comprobable. (30 hs)
+    \end{itemize}
+    \item Análisis exploratorio de datos. (81 hs) 
+    \begin{itemize}
+      \item Visualización de datos.
+      \item Prueba de hipótesis.
+    \end{itemize}
+    \item Ingeniería de \textit{features} (60 hs)
+    \item Prototipado (modelo de \textit{Machine Learning}) (99 hs)
+    \item Ensayos y pruebas 
+    \begin{itemize}
+      \item Ensayo de prototipo v1. (15 hs)
+      \item Ajustes según respuesta del cliente. (30 hs)
+      \item Ensayo de prototipo v2. (15 hs)
+    \end{itemize}
+    \end{enumerate}
+  \item Finalización (total 120 hs)
+    \begin{enumerate}
+      \item Primera versión de la Memoria (30 hs)
+      \item Segunda versión de la Memoria (30 hs)
+      \item Versión Final de la Memoria (30 hs)
+      \item Elaborar la presentación (30 hs)
+    \end{enumerate}
 \end{enumerate}
 
-Cantidad total de horas: (tantas hs)
-
-Se recomienda que no haya ninguna tarea que lleve más de 40 hs. 
-
-\end{consigna}
+Cantidad total de horas: (600 hs)
 
 \section{7. Diagrama de Activity On Node}
 \label{sec:AoN}
@@ -334,24 +341,33 @@ Es recomendable usar colores y un cuadro indicativo describiendo qué representa
     y unit title=0.7cm,
     y unit chart=0.6cm,
     milestone/.append style={xscale=4}
-    ]{2021-03-5}{2021-12-15}
-    \gantttitlecalendar*{2021-03-5}{2021-12-15}{year} \\
-    \gantttitlecalendar*{2021-03-5}{2021-12-15}{month} \\
-    \ganttgroup{Duración Total}{2021-03-5}{2021-12-15} \\
+    ]{2021-03-5}{2021-12-17}
+    \gantttitlecalendar*{2021-03-5}{2021-12-17}{year} \\
+    \gantttitlecalendar*{2021-03-5}{2021-12-17}{month} \\
+    \ganttgroup{Duración Total}{2021-03-5}{2021-12-17} \\
     %%%%%%%%%%%%%%%%%Organización
-    \ganttgroup{Organización}{2021-03-5}{2021-12-10} \\
-    \ganttbar{Planificación del proyecto}{2021-03-5}{2021-04-13} \\
+    \ganttgroup{Organización}{2021-03-5}{2021-04-16} \\
+    \ganttbar{Planificación del proyecto}{2021-03-5}{2021-04-16} \\
     %%%%%%%%%%%%%%%%%Ejecución
-    \ganttgroup{Ejecución}{2021-04-14}{2021-11-5} \\
-    \ganttbar{Desarrollar proyecto}{2021-04-14}{2021-11-5} \\
+    \ganttgroup{Ejecución}{2021-04-19}{2021-10-15} \\
+    \ganttbar{Identificación del problema}{2021-04-19}{2021-04-30} \\
+    \ganttbar{Obtener la información}{2021-05-3}{2021-05-14} \\
+    \ganttbar{Hipótesis comprobable}{2021-05-17}{2021-05-28} \\
+    \ganttbar{Visualización de datos}{2021-05-31}{2021-07-14} \\
+    \ganttbar{Prueba de hipótesis}{2021-05-31}{2021-07-14} \\
+    \ganttbar{Ingeniería de \textit{features}}{2021-07-15}{2021-08-11} \\
+    \ganttbar{Prototipado}{2021-08-12}{2021-09-24} \\
+    \ganttbar{Ensayo de prototipo v1}{2021-09-27}{2021-10-1} \\
+    \ganttbar{Ajustes según respuesta}{2021-10-4}{2021-10-15} \\
+    \ganttbar{Ensayo de prototipo v2}{2021-10-18}{2021-10-22} \\
     % %%%%%%%%%%%%%%%%%Finalización
-    \ganttgroup{Finalización}{2021-11-8}{2021-12-10} \\
-    \ganttbar{Memoria v1}{2021-11-8}{2021-11-19} \\
-    \ganttbar{Memoria v2}{2021-11-20}{2021-11-26} \\
-    \ganttbar{Memoria final}{2021-11-27}{2021-12-3} \\
+    \ganttgroup{Finalización}{2021-10-25}{2021-12-17} \\
+    \ganttbar{Memoria v1}{2021-10-25}{2021-11-5} \\
+    \ganttbar{Memoria v2}{2021-11-8}{2021-11-19} \\
+    \ganttbar{Memoria final}{2021-11-22}{2021-12-3} \\
     \ganttmilestone{Enviar memoria al director}{2021-12-3} \\
-    \ganttbar{Elaborar la presentación}{2021-12-4}{2021-12-15} \\
-    \ganttmilestone{Ensayo de la presentación}{2021-12-15} \\
+    \ganttbar{Elaborar la presentación}{2021-12-6}{2021-12-17} \\
+    \ganttmilestone{Ensayo de la presentación}{2021-12-17} \\
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{ganttchart}
   \caption{Diagrama de Gantt.}
