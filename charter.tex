@@ -485,29 +485,55 @@ Referencias:
 \section{12. Gestión de riesgos}
 \label{sec:riesgos}
 
-\begin{consigna}{red}
-a) Identificación de los riesgos (al menos cinco) y estimación de sus consecuencias:
+\begin{itemize}
+  \item Riesgo 1: Suspensión definitiva de la actividad de PLAYTRAK por contingencia sanitaria.
+  \begin{itemize}
+    \item Severidad (9): La interrupción de la actividad de la empresa auspiciante, pondría en riesgo la 
+    continuidad del proyecto.
+    \item Ocurrencia (8): Durante el año pasado esto sucedió y es posible que vuelva a suceder.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item Riesgo 2: Imposibilidad de la empresa de permitir el desarrollo en horario laboral.
+  \begin{itemize}
+    \item Severidad (5): No sería tan grave porque se podría intentar continuar con el desarrollo fuera del 
+    horario laboral. Esto probablemente dilataría el trabajo en el tiempo, pero se podría concretar.
+    \item Ocurrencia (9): No es prioritario para la compañía la incorporación de intelegencia artificial.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item Riesgo 3: Imposibilidad de seguir esta planificación
+  \begin{itemize}
+    \item Severidad (10): En este caso, la empresa cancelaría el proyecto. Este proyecto se mantiene en pie por 
+    la importancia académica.
+    \item Ocurrencia (7): A la hora de armar esta planificación no se tiene experiencia en el desarrollo
+    de proyectos de este tipo, por lo que se esperan variaciones.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item Riesgo 4: Fracaso de la usabilidad de este proyecto
+  \begin{itemize}
+    \item Severidad (8): El cliente plantea este proyecto a modo de prototipo de un producto que le permitiría mejorar 
+    la atención a clientes. Es posible que PLAYTRAK, más allá de haber puesto esfuerzo en esta planificación, 
+    determine que no es factible implementar este producto. Si se detecta esto en medio del avance del proyecto, 
+    puede llegar a ser cancelado.
+    \item Ocurrencia (3): Durante la elaboración de la planificación se ha repasado ampliamente el 
+    valor que este proyecto le ofrece al sistema de administración de casinos que PLAYTRAK ofrece.
+  \end{itemize}
+\end{itemize}
  
-Riesgo 1: detallar el riesgo (riesgo es algo que si ocurre altera los planes previstos)
 \begin{itemize}
-\item Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).\\
-Justificar el motivo por el cual se asigna determinado número de severidad (S).
-\item Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).\\
-Justificar el motivo por el cual se asigna determinado número de (O). 
-\end{itemize}   
-
-Riesgo 2:
-\begin{itemize}
-\item Severidad (S): 
-\item Ocurrencia (O):
+  \item Riesgo 5: Pérdida material o rotura del equipo de cómputo
+  \begin{itemize}
+    \item Severidad (6): Tal como se muestra en el apartado (9), la computadora es el recurso más utilizado en este proyecto. 
+    La severidad se ve disminuida por el hecho de que se podría conseguir un equipo de reemplazo.
+    \item Ocurrencia (1): La computadora disponible para el desarrollo de este proyecto tiene una antigüedad 
+    de menos de 1 año y aún está en garantía.
+  \end{itemize}
 \end{itemize}
-
-Riesgo 3:
-\begin{itemize}
-\item Severidad (S): 
-\item Ocurrencia (O):
-\end{itemize}
-
 
 b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 
@@ -517,33 +543,48 @@ b) Tabla de gestión de riesgos:      (El RPN se calcula como RPN=SxO)
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
-       &   &   &     &    &    &      \\ \hline
+Riesgo 1 & 9  & 8 & 72  & 4 & 8 & 32  \\ \hline
+Riesgo 2 & 5  & 9 & 45  & 3 & 9 & 27  \\ \hline
+Riesgo 3 & 10 & 7 & 70  & 3 & 7 & 21  \\ \hline
+Riesgo 4 & 8  & 3 & 24  &   &   &     \\ \hline
+Riesgo 5 & 6  & 1 & 6   &   &   &     \\ \hline
 \end{tabularx}%
 \end{table}
 
 Criterio adoptado: 
-Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a...
+Se tomarán medidas de mitigación en los riesgos cuyos números de RPN sean mayores a 40.
 
 Nota: los valores marcados con (*) en la tabla corresponden luego de haber aplicado la mitigación.
 
 c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo establecido:
- 
-Riesgo 1: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
-  Nueva asignación de S y O, con su respectiva justificación:
-  - Severidad (S): mientras más severo, más alto es el número (usar números del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de severidad (S).
-  - Probabilidad de ocurrencia (O): mientras más probable, más alto es el número (usar del 1 al 10).
-          Justificar el motivo por el cual se asigna determinado número de (O).
 
-Riesgo 2: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
- 
-Riesgo 3: plan de mitigación (si por el RPN fuera necesario elaborar un plan de mitigación).
+\begin{itemize}
+  \item Riesgo 1: Contar con recursos económicos para poder continuar con el trabajo a pesar de no estar trabajando.
+  \begin{itemize}
+    \item Severidad (4): Si la empresa suspende las actividades en un estadío temprano del proeycto, se
+    requiere mucho dinero para dedicar tiempo a finalizar. Si esto sucede cerca del final, se podrá concluir
+    antes de buscar un nuevo trabajo.
+    \item Ocurrencia (8):  No cambia con la mitigación, no es posible trabajar sobre esto.
+  \end{itemize}
+\end{itemize}
 
-\end{consigna}
+\begin{itemize}
+  \item Riesgo 2: Dedicar tiempo fuera del trabajo al desarrollo de este proyecto.
+  \begin{itemize}
+    \item Severidad (3): El reponsable cuenta con tiempo extra y el proyecto se puede extender hasta
+    2 años sin afectar académicamente.
+    \item Ocurrencia (9): No es prioritario para la compañía la incorporación de intelegencia artificial.
+  \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+  \item Riesgo 3: Misma mitigación que Riesgo 2.
+  \begin{itemize}
+    \item Severidad (3): Idem a severidad de Riesgo 2.
+    \item Ocurrencia (7): A la hora de armar esta planificación no se tiene experiencia en el desarrollo
+    de proyectos de este tipo, por lo que se esperan variaciones.
+  \end{itemize}
+\end{itemize}
 
 
 \section{13. Gestión de la calidad}
