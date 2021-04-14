@@ -590,23 +590,73 @@ c) Plan de mitigación de los riesgos que originalmente excedían el RPN máximo
 \section{13. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-Para cada uno de los requerimientos del proyecto indique:
 \begin{itemize} 
-\item Req \#1: copiar acá el requerimiento.
+\item Req \#1: Debe recibir compras, pagos, apuestas y ganancia; y devolver categoría.
 
 Verificación y validación:
-
 \begin{itemize}
-\item Verificación para confirmar si se cumplió con lo requerido antes de mostrar el sistema al cliente. Detallar 
-\item Validación con el cliente para confirmar que está de acuerdo en que se cumplió con lo requerido. Detallar  
+  \item Verificación: diseño de API con dichos parámetros de entrada. 
+  \item Validación: recibir datos de clientes y devolver la categoría esperada.
+\end{itemize}
+
+\item Req \#2: El código fuente debe estar alojado en GitLab.
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: utilizar GitLab como servidor de control de versiones git.
+  \item Validación: compartir el repositorio con el cliente.
+\end{itemize}
+
+\item Req \#3: Se debe implementar DevOps y el proyecto debe estar siempre disponible para revisión.
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: agregar CI/CD al repositorio.
+  \item Validación: probar sobre el sitio web automáticamente desplegado.
+\end{itemize}
+
+\item Req \#4: El desarrollo se debe realizar usando \textit{Test Driven Development}.
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: escribir pruebas unitarias a priori.
+  \item Validación: mostrar las pruebas unitarias pasando antes de cada despliegue. 
+\end{itemize}
+
+\item Req \#5: La documentación debe estar escrita en \textit{markdown} y alojada usando MkDocs o similar.
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: escribir la documentación en dicho lenguaje.
+  \item Validación: mostrar sitio web de documentación funcionando.
+\end{itemize}
+
+\item Req \#6: Debe contar con el detalle para operaciones (instalación del \textit{software}).
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: desde el principio agregar las instrucciones para poner a funcionar el \textit{software}
+  en un ambiente productivo. 
+  \item Validación: tomar las instrucciones e instalar en un ambiente que cumpla con los prerequisitos.  
+\end{itemize}
+
+\item Req \#7: Debe contar con el detalle de uso (información para usuarios).
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: mantener la documentación sobre el uso con suficiente claridad.
+  \item Validación: una persona sin conocimiento previo debe poder usar el \textit{software} tras leer el manual.
+\end{itemize}
+
+\item Req \#8: Debe contar con el detalle para extender las funcionalidades (información para otros programadores).
+
+Verificación y validación:
+\begin{itemize}
+  \item Verificación: docuemntar la plataforma de desarrollo.
+  \item Validación: un programador debe poder entender cómo extender y mantener con el \textit{software}.
 \end{itemize}
 
 \end{itemize}
-
-Tener en cuenta que en este contexto se pueden mencionar simulaciones, cálculos, revisión de hojas de datos, consulta con expertos, mediciones, etc.
-
-\end{consigna}
 
 \section{14. Comunicación del proyecto}
 \label{sec:comunicaciones}
