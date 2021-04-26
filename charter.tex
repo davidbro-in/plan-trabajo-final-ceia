@@ -225,42 +225,41 @@ Para el desarrollo del presente proyecto se supone que el cliente permitirá el 
 \section{Historias de usuarios (\textit{Product backlog})}
 \label{sec:backlog}
 A continuación se listan las historias de usuario para este proyecto, entre paréntesis se encuentra el peso
-de cada una de ellas y en la sub sección \ref{storypoints_criteria} se detalla el criterio para determinar 
-este atributo.
+de cada una de ellas. Al final de esta sección se detalla el criterio para determinar este atributo.
 
 \begin{enumerate}
   \item Como operador de un casino quiero que el sistema clasifique los clientes en función de sus transacciones
   de caja y de juego (Cantidad: 5; complejidad: 13; riesgo: 5; total: 325).
   \item Como cliente de un casino quiero conocer mi catergoría para saber qué beneficios me corresponden (Cantidad: 3; 
   complejidad: 5; riesgo: 2; total: 30).
-  \item Como operador de un casino quiero ver los clientes que están cada categoría para poder darles 
+  \item Como operador de un casino quiero ver los clientes que están en cada categoría para poder darles 
   atención diferenciada (Cantidad: 3; complejidad: 5; riesgo: 2; total: 30).
   \item Como SMIB (\textit{Slot Machine Interface Board}) quiero conocer la categoría del cliente que está jugando 
   para poder personalizar la interfaz gráfica (Cantidad: 3; complejidad: 1; riesgo: 2; total: 6).
 \end{enumerate}
 
-\subsection{Criterio para determinar \textit{storypoints}}
-\label{storypoints_criteria}
-\begin{enumerate}
+A continuación se presenta el criterio para determinar \textit{storypoints}
+
+\begin{itemize}
   \item Cantidad de trabajo a realizar.
-  \begin{enumerate}
+  \begin{itemize}
     \item Bajo: 1
     \item Medio: 3
     \item Alto: 5
-  \end{enumerate}
+  \end{itemize}
   \item Complejidad del trabajo a realizar.
-  \begin{enumerate}
+  \begin{itemize}
     \item Bajo: 1
     \item Medio: 5
     \item Alto: 13
-  \end{enumerate}
+  \end{itemize}
   \item Riesgo o incertidumre del trabajo a realizar
-  \begin{enumerate}
+  \begin{itemize}
     \item Bajo: 2
     \item Medio: 3
     \item Alto: 5
-  \end{enumerate}
-\end{enumerate}
+  \end{itemize}
+\end{itemize}
 
 \section{5. Entregables principales del proyecto}
 \label{sec:entregables}
@@ -388,14 +387,16 @@ Los tiempos están expresados en horas.
 \section{10. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
+A continuación se detallan los costos del proyecto en dólares estadounidenses.
+
 \begin{table}[htpb]
-\centering
-\begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
-\hline
-\rowcolor[HTML]{C0C0C0} 
-\multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS} \\ \hline
-\rowcolor[HTML]{C0C0C0} 
-Descripción &
+  \centering
+  \begin{tabularx}{\linewidth}{@{}|X|c|r|r|@{}}
+  \hline
+  \rowcolor[HTML]{C0C0C0} 
+  \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS DIRECTOS} \\ \hline
+  \rowcolor[HTML]{C0C0C0} 
+  Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
@@ -417,19 +418,30 @@ Infraestructura \textit{cloud} &
   336 \\ \hline
 Laptop &
   12 &
-  69,44 &
-  833,33 \\ \hline
+  69.44 &
+  833.33 \\ \hline
 Sistemas Informáticos (Google Workspace) &
   12 &
   5 &
   60 \\ \hline
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  73,229.33 \\ \hline
-\rowcolor[HTML]{C0C0C0}
-\multicolumn{3}{|c|}{TOTAL} &
-  73,229.33 \\ \hline
-\end{tabularx}%
-\end{table}
+  73.229,33 \\ \hline
+  \rowcolor[HTML]{C0C0C0} 
+  \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
+  \rowcolor[HTML]{C0C0C0} 
+  Descripción &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
+    \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
+  \multicolumn{1}{|l|}{30\% de los costos directos} &
+    1 &
+    24.165,68 &
+    24.165,68 \\ \hline
+  \rowcolor[HTML]{C0C0C0}
+  \multicolumn{3}{|c|}{TOTAL} &
+    97.395,01 \\ \hline
+  \end{tabularx}%
+  \end{table}
 
 
 \section{11. Matriz de asignación de responsabilidades}
@@ -744,7 +756,7 @@ siguientes actividades:
     \item Fechas de las entregas al cliente. 
   \end{itemize}
 \end{itemize}
-\item Identificación de las técnicas y procedimientos útiles e inútiles que se utilizaron, y los problemas que surgieron 
+\item Identificación de las técnicas y procedimientos útiles e inútiles que se emplearon, y los problemas que surgieron 
 y cómo se solucionaron:
 \begin{itemize}
   \item Responsable: David Broin
