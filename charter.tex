@@ -199,7 +199,13 @@ Para el desarrollo del presente proyecto se supone que el cliente permitirá el 
 \begin{enumerate}
 \item Grupo de requerimientos asociados con funcionalidad
 	\begin{enumerate}
-	\item Debe recibir compras, pagos, apuestas y ganancia; y devolver categoría.
+	\item Interfaz REST JSON.
+	\item \textit{Endpoint} POST para recibir compras por cliente.
+	\item \textit{Endpoint} POST para recibir pagos por cliente.
+	\item \textit{Endpoint} POST para recibir apuestas por cliente.
+	\item \textit{Endpoint} POST para recibir ganancia por cliente.
+	\item \textit{Endpoint} GET para recibir cliente y devolver categoría.
+  \item Debe contar con configuración de GitLab CI y tener despliegue automático a AWS.
 	\end{enumerate}
 \item Grupo de requerimientos asociados con flujo de trabajo
 	\begin{enumerate}
