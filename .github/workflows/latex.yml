@@ -26,3 +26,11 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: Jatus93/Latex-multicompiler@97081e71ec28ea353c04532b73baa1217d1e38f6
         uses: Jatus93/Latex-multicompiler@v1.0
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2.2.3
+        with:
+            # Artifact name
+          path: charter.pdf
+            # The desired behavior if no files are found using the provided path.
+
