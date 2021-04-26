@@ -24,7 +24,8 @@ jobs:
     steps:
       - name: Latexmk
         uses: hspaans/latexmk-action@v1.0.13# Source file name
-        filename: charter.tex
+        with:
+          filename: chartex.tex
       
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.2.3
